@@ -1,0 +1,32 @@
+@import url("fonts.css");
+
+html {
+  width: 100%;
+}
+
+body {
+  font-family: "Geist-sans", sans-serif !important;
+  background: black;
+  color: white;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+
+.header {
+  width: 100%;
+  padding: 2px 0;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #323232;
+  background: linear-gradient(180deg, #000000, 181818);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
