@@ -24,7 +24,7 @@ body {
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid #323232;
-  background: linear-gradient(180deg, #000000, 181818);
+  background: linear-gradient(180deg, #000000, #181818);
   position: fixed;
   top: 0;
   left: 0;
