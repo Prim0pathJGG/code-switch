@@ -1,11 +1,17 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles/style.css" >
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/themes/prism-okaidia.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/themes/prism-okaidia.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/plugins/line-numbers/prism-line-numbers.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/components/prism-typescript.min.js"></script>
@@ -15,30 +21,322 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/components/prism-bash.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/components/prism-elixir.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/components/prism-java.min.js"></script>
-    <title>Code Switcher</title>
+    <script type="module" src="js/script.js"></script>
+    <script type="module" src="js/stars.js"></script>
+    <title>Code Switch</title>
   </head>
   <body>
-  <header class="header">
+    <header class="header">
       <div class="header__inner">
         <div class="header__inner-left">
           <div class="mobile-menu-icon">
-                <i class="fas fa-bars"></i>
+            <i class="fas fa-bars"></i>
           </div>
-             <h1 class="header__title">CodeSwitch</h1>
+          <h1 class="header__title">CodeSwitch</h1>
         </div>
         <nav class="header__nav">
-          <a href="#" class="header__link">about</a>
-          <a href="#" class="header__link">blog</a>
-          <a href="#" class="header__link">pricing</a>
-          <a href="#" class="header__link">changelogs</a>
-          <a href="#" class="header__link">docs</a>
-          <a href="#" class="header__link">discord</a>
+          <a href="#" class="header__link">About</a>
+          <a href="#" class="header__link">Blog</a>
+          <a href="#" class="header__link">Pricing</a>
+          <a href="#" class="header__link">Changelogs</a>
+          <a href="#" class="header__link">Docs</a>
+          <a href="#" class="header__link">Discord</a>
         </nav>
         <div class="header__auth">
-          <button class="header__button header__button--create">Create Account</button>
-          <button class="header__button header__button--sign-in">Sign In</button>
+          <button class="header__button header__button--create">
+            Create Account
+          </button>
+          <button class="header__button header__button--sign-in">
+            Sign In
+          </button>
         </div>
       </div>
-  </header>
+    </header>
+
+    <section class="container">
+      <h2 class="container__title">
+        Any language any framework, always secure
+      </h2>
+      <p class="container__description">
+        Integrate authentification into your APIs effortlessly with just a few
+        lines of code we offer SDKs for specific languages, and frameworks
+        alongside an intuitive REST API with a public OpenAPI specification.
+      </p>
+      <div class="container__buttons">
+        <button class="container__button container__button--get-started">
+          Get started
+        </button>
+        <button class="container__button container__button--view-docs">
+          <span>Visit the docs</span><i class="fas fa-arrow-right"></i>
+        </button>
+      </div>
+      <div class="code-container-bg-blur"></div>
+
+      <div class="code-container">
+        <div class="code-container__tabs">
+          <button
+            class="code-container__tab code-container__tab--active"
+            data-language="prism-typescript"
+          >
+            <i class="fab fa-js-square code-container__icon"></i>
+            Typescript
+          </button>
+
+          <div class="code-container">
+            <button
+              class="code-container__tab code-container__tab--active"
+              data-language="prism-python"
+            >
+              <i class="fab fa-js-square code-container__icon"></i>
+              Python
+            </button>
+          </div>
+          <div class="code-container">
+            <button
+              class="code-container__tab code-container__tab--active"
+              data-language="prism-rust"
+            >
+              <i class="fab fa-js-square code-container__icon"></i>
+              Rust
+            </button>
+          </div>
+          <div class="code-container">
+            <button
+              class="code-container__tab code-container__tab--active"
+              data-language="prism-golang"
+            >
+              <i class="fab fa-js-square code-container__icon"></i>
+              Golang
+            </button>
+          </div>
+          <div class="code-container">
+            <button
+              class="code-container__tab code-container__tab--active"
+              data-language="prism-elixir"
+            >
+              <i class="fab fa-js-square code-container__icon"></i>
+              Elixir
+            </button>
+          </div>
+          <div class="code-container">
+            <button
+              class="code-container__tab code-container__tab--active"
+              data-language="prism-java"
+            >
+              <i class="fab fa-js-square code-container__icon"></i>
+              Java
+            </button>
+          </div>
+          <div class="code-container">
+            <button
+              class="code-container__tab code-container__tab--active"
+              data-language="prism-bash"
+            >
+              <i class="fab fa-js-square code-container__icon"></i>
+              Bash
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="code-container__content">
+        <div
+          class="copy-icon"
+          one
+          click="copyCode()"
+          role="button"
+          tabindex="0"
+          aria-label="copy code to clipboard"
+          title="copy code to clipboard"
+        >
+          <i class="fa fas-copy"></i>
+        </div>
+        <pre
+          class="code-container__code code-container__code--python code-container__code--active line-numbers"
+        >
+          <code class="language-python"> import asyncio 
+            import os 
+            import CodeSwitch
+            async def main() -> None:
+    client = codeswitch.Client(api_key=os.environ["API_KEY"])
+    await client.start()
+
+    result = await client.keys.verify_key("prefix_abc123")
+
+    if result.is_ok {
+        print(data.valid);
+    } else {
+        print(result.unwrap_err());
+    }
+          </code>
+      </pre>
+        <pre
+          class="code-container__code code-container__code--rust code-container__code--active line-numbers"
+        >
+          <code class="language-rust">
+            use codeswitch::models::{VerifyKeyRequest, Wrapped};
+use codeswitch::Client;
+
+async fn verify_key() {
+    let api_key = env::var("codeswitch_API_KEY").expect("Environment variable CODESWITCH_API_KEY not found");
+    let c = Client::new(&api_key);
+    let req = VerifyKeyRequest::new("test_req", "api_458vdYdbwut5LWABzXZP3Z8jPVas");
+
+    match c.verify_key(req).await {
+        Wrapped::Ok(res) => println!("{{res:?}}"),
+        Wrapped::Err(err) => eprintln!("{{err:?}}"),
+    }
+}
+          </code>
+        </pre>
+        <pre
+          class="code-container__code code-container__code--golang code-container__code--active line-numbers"
+        >
+        <code class="language-golang">
+          package main
+
+import (
+    "fmt"
+    codeswitch "github.com/WilfredAlmeida/codeswitch-go/features"
+)
+
+func main() {
+    apiKey := "key_3ZZ7faJrkfv1YAfhfAcnKW74";
+    response, err := codeswitch.KeyVerify(apiKey);
+    if err != nil {
+        fmt.Println("Error:", err);
+        return;
+    }
+
+    if response.Valid {
+        fmt.Println("Key is valid");
+    } else {
+        fmt.Println("Key is invalid");
+    }
+}
+                
+        </code>
+        </pre>
+        <pre
+          class="code-container__code code-container__code--bash code-container__code--active line-numbers"
+        >
+          <code class="language-bash">
+            Bash --request POST \
+--url https://api.codeswitch.dev/v1/keys.verifyKey \
+--header 'Content-Type: application/json' \
+--data '{
+    "apiId": "api_1234",
+    "key": "sk_1234",
+}'
+                
+          </code>
+        </pre>
+        <pre
+          class="code-container__code code-container__code--elixir code-container__code--active line-numbers"
+        >
+          <code class="language-elixir">
+            CodeswitchElixirSdk.verify_key("xyz_AS5HDbkXXPot2MMoPHD8jnL")
+
+# returns
+%{
+    "valid" => true,
+    "ownerId" => "chronak",
+    "meta" => %{
+        "hello" => "world"
+    }
+}
+                
+          </code>
+        </pre>
+        <pre
+          class="code-container__code code-container__code--java code-container__code--active line-numbers"
+        >
+          <code class="language-java">
+            package com.example.myapp;
+import com.codeswitch.codeswitchsdk.dto.KeyVerifyRequest;
+import com.codeswitch.codeswitchsdk.dto.KeyVerifyResponse;
+
+@RestController
+public class APIController {
+
+    private static IKeyService keyService = new KeyService();
+
+    @PostMapping("/verify")
+    public KeyVerifyResponse verifyKey(
+        @RequestBody KeyVerifyRequest keyVerifyRequest) {
+        // Delegate the creation of the key to the KeyService from the SDK
+        return keyService.verifyKey(keyVerifyRequest);
+    }
+}
+                
+          </code>
+        </pre>
+      </div>
+
+      <div class="open-source-section">
+        <h3 class="section-subtitle">oss/acc</h3>
+        <h2 class="section-title">Open-source</h2>
+        <p class="section-description">
+          we believe strongly in the value of open source
+        </p>
+        <button class="github-button">
+          <i class="fab fa-github"></i>view on Github
+        </button>
+        <div class="gitPulse">
+          <img src="images/gitpulse.svg" alt="GitPulse" />
+          <div class="gitPulse__bg"></div>
+        </div>
+      </div>
+
+      <pre
+        class="code-container__code code-container__code--typescript code-container__code--active line-numbers"
+      >
+          <code class="language-typescript">
+                <div class="box" id="box">Any language any framework</div>
+
+<style>
+body{margin:0;font-family:sans-serif;display:flex;justify-content:center;align-items:center;height:100vh;background:#111}
+.box{padding:3vw;font-size:clamp(16px,3vw,36px);background:#4caf50;color:white;border-radius:12px;transition:all .3s ease;text-align:center;width:60vw}
+@media (max-width:900px){.box{background:#2196f3;width:80vw}}
+@media (max-width:500px){.box{background:#ff5722;font-size:20px;width:95vw}}
+</style>
+
+<script>
+const box=document.getElementById("box");
+function update(){
+  const w=window.innerWidth;
+  box.innerText=`Lorem ipsum dolor sit amet | width: ${w}px`;
+  if(w<500){box.style.transform="scale(0.95)";}
+  else if(w<900){box.style.transform="scale(1.05)";}
+  else{box.style.transform="scale(1)";}
+}
+window.addEventListener("resize",update);
+update();
+</script>
+          </code>
+      </pre>
+    </section>
+    <footer class="footer">
+      <div class="footer__inner">
+        <span>C</span>
+        <span>O</span>
+        <span>D</span>
+        <span>E</span>
+        <span>S</span>
+        <span>W</span>
+        <span>I</span>
+        <span>T</span>
+        <span>C</span>
+        <span>H</span>
+      </div>
+    </footer>
+    <script src="js.script.js"></script>
+    <script src="stars.js"></script>
+    <script>
+      document
+        .querySelector("mobile-menu-icon")
+        .addEventListener("click", function () {
+          document.querySelector(".header__nav").classList.toggle("active");
+        });
+    </script>
   </body>
 </html>
