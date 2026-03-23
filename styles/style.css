@@ -572,3 +572,39 @@ pre[class*="language-"].line-numbers > code {
   }
 }
 
+.star {
+  position: fixed;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 2px;
+  height: 100px;
+  background: linear-gradient(to top, white, white, transparent);
+  border-radius: 50%;
+  transform: translateX(-50%);
+  animation: fall 3s linear infinite;
+}
+
+@keyframes twinkling {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+.star::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 2px;
+  height: 100px;
+  background: linear-gradient(to top, white, white, transparent);
+  border-radius: 50%;
+  transform: translateX(-50%);
+  animation: twinkling 4.5s infinite;
+}
